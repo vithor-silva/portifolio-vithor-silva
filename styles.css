@@ -252,7 +252,7 @@ body {
   }
 
   .navbar.active {
-    background-color: #923ebe;
+    background-color: var(--cinza);
     display: block;
     height: calc(100vh - 78px);
     left: 0;
@@ -280,7 +280,7 @@ body {
   }
 
   .burger-button .burger-button__bar {
-    background-color: #fff;
+    background-color: var(--laranja);
     display: block;
     height: 2px;
     margin-block: 8px;
