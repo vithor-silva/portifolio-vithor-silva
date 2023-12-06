@@ -247,6 +247,10 @@ body {
   }
 
   @media (max-width: 768px) {
+  body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+
   .navbar {
     display: none;
   }
@@ -264,8 +268,7 @@ body {
   .navbar.active .navbar__links-list {
     align-items: center;
     flex-direction: column;
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 20px; /* Adjust the font size for smaller screens */
     gap: 20px;
     height: 100%;
     justify-content: center;
@@ -303,9 +306,22 @@ body {
   .navbar.active ~ .burger-button .burger-button__bar:nth-child(3) {
     display: none;
   }
+
+  #sobre,
+  #dados_contato,
+  #formacoes,
+  #experiencias {
+    max-width: 100%; /* Ensure content doesn't overflow on smaller screens */
+  }
 }
 
-
+@media (max-width: 300px) {
+  .header h1 {
+    font-size: 25px;
+  }
+  
+  /* Add additional styles for screens smaller than 300px if needed */
+}
 @media (max-width: 300px) {
   .header h1 {
     font-size: 25px;
