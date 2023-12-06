@@ -4,26 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&family=Poppins:wght@100;300;500;700&family=Roboto:ital,wght@0,100;0,400;0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&family=Poppins:wght@100;300;500;700&family=Roboto:ital,wght@0,100;0,400;0,700;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Portifólio Vithor Silva</title>
   </head>
   <body>
     <!-- NAV - PORTIFÓLIO -->
+    <!--
+      - Sobre
+      - contatos
+      - formação
+      - Experiências
+    -->
     <header class="header">
-      <nav class="header-menu">
+  <h1>Vithor Silva</h1>
+
+  <nav class="navbar">
+    <ul class="navbar__links-list">
+      <li class="links-list__item">
         <a href="#sobre">Sobre</a>
+      </li>
+
+      <li class="links-list__item">
         <a href="#dados_contato">Contatos</a>
+      </li>
+
+      <li class="links-list__item">
         <a href="#formacoes">Formação</a>
+      </li>
+
+      <li class="links-list__item">
         <a href="#experiencias">Experiências</a>
-      </nav>
-    </header>
+      </li>
+    </ul>
+  </nav>
+
+  <button class="burger-button">
+    <span class="burger-button__bar"></span>
+    <span class="burger-button__bar"></span>
+    <span class="burger-button__bar"></span>
+  </button>
+</header>
     <main class="container">
       <a href="#home"><i id="link-home" class='bx bx-up-arrow-circle' ></i></a>
       <section id="home">
@@ -112,5 +136,6 @@
         </nav>
       </footer>
     </main>
+    <script src="main.js"></script>
   </body>
 </html>
